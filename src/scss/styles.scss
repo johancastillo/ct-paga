@@ -17,6 +17,7 @@
 :: 18.0 FAQ AREA CSS
 :: 26.0 FOOTER AREA CSS
 ****************************** */
+@import "./variables";
 
 /* ****************
 :: 1.0 WEB FONTS ::
@@ -100,3 +101,13 @@
 :: Styles me ::
 ************ */
 @import "./extra";
+
+
+button.btn-primary {
+    background: $color-two !important;
+}
+
+button.btn-secondary {
+    background: #fff !important;
+    color: $color-three !important;
+}

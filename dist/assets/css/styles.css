@@ -1253,3 +1253,10 @@ button.btn-tertiary {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+button.btn-primary {
+  background: #FF9035 !important; }
+
+button.btn-secondary {
+  background: #fff !important;
+  color: #59595e !important; }
