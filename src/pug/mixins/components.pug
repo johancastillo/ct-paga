@@ -1,4 +1,4 @@
-//- ***** Review Card *****
+//- ***** Review Card Start *****
 mixin reviewCard(name, text)
     div.col-12.col-md-6.col-lg-4.mb-4
         <!-- Single Review -->
@@ -25,8 +25,11 @@ mixin reviewCard(name, text)
                     h5.reviewer-name.color-primary.mb-2= name
                     //- <h6 class="text-secondary fw-6">Venezuela</h6>
 
+//- ***** Review Card End *****
 
-//- ***** Benefit Card *****
+
+
+//- ***** Benefit Card Start *****
 mixin benefitCard(icon, title, description, spaces)
     div.col-12.col-md-6.col-lg-4.col-xl-3.mt-4
         //- Image Box
@@ -49,3 +52,15 @@ mixin benefitCard(icon, title, description, spaces)
                         while i < spaces
                             br
                             - i++
+//- ***** Benefit Card Start *****
+
+
+//- ***** Card Question Start *****
+mixin cardQuestion(title, description)
+    div.card.border-0
+        //- Card Header
+        div.card-header.bg-inherit.border-0.p-0
+            h3.mb-0.py-3.question= title
+        //- Card Body
+        div.card-body.px-0.py-3= description
+//- ***** Card Question End *****
