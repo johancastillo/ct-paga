@@ -2,9 +2,14 @@ extends ../templates/template
 
 block content
     //- ***** Scroll To Top Area Start *****
-    div#scrollUp(title="Scroll To Top")
-        i.fas.fa-arrow-up
+        div#scrollUp(title="Scroll To Top")
+            i.fas.fa-arrow-up
     //- ***** Scroll To Top Area End *****
+
+    //- To Top Start
+    div#to-top
+        i.fas.fa-arrow-up
+    //- To Top End
 
     .main
         //- ***** Navegation *****
@@ -37,9 +42,6 @@ block content
 
         //- ***** Btn action 1 *****
         +btn-center('Ir a Tarjeta Efectivo')
-
-        //- ***** Google Map *****
-        include ../includes/GoogleMap
 
         //- ***** Questions Area Start *****
         include ../includes/Questions

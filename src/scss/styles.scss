@@ -17,6 +17,7 @@
 :: 18.0 FAQ AREA CSS
 :: 26.0 FOOTER AREA CSS
 ****************************** */
+
 @import "./variables";
 
 /* ****************
@@ -110,4 +111,7 @@ button.btn-primary {
 button.btn-secondary {
     background: #fff !important;
     color: $color-three !important;
+
 }
+
+@import "./toTop";
