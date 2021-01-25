@@ -27,28 +27,25 @@ mixin reviewCard(name, text)
 
 
 //- ***** Benefit Card *****
-mixin benefitCard()
-    <div class="col-12 col-md-6 col-lg-4 res-margin">
+mixin benefitCard(icon, title, description, spaces)
+    div.col-12.col-md-6.col-lg-3.mt-4
         //- Image Box
-        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-wow-delay="0.4s">
+        div.image-box.text-center.icon-1.p-5.wow.fadeInLeft(data-wow-delay="0.4s")
 
             //- Featured Image
             div.featured-img.mb-3
-                span(class="icon-fitment").benefit-icon
+                span(class= icon).benefit-icon
 
             //- Icon Text
             div.icon-text
-                h3.mb-2 Comodidad
+                h3.mb-2= title
 
                 block contentCard
-                    <p>
-                        | Puedes enviar remesas a <br>
-                        | Venezuela directamente, sin <br> 
-                        | intermediarios ni terceros. 
-                        <br>
-                        <br>
-                        <br>
-                    </p>
-
-        </div>
-    </div>
+                    p= description
+                    
+                    //- Print spaces
+                    - let i = 0
+                    div
+                        while i < spaces
+                            br
+                            - i++
