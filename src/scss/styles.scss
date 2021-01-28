@@ -115,3 +115,18 @@ button.btn-secondary {
 }
 
 @import "./toTop";
+@import "./content-slider";
+
+.left-animation{
+    animation-duration: 10s;
+    animation-name: left-animation ;
+}
+
+@keyframes left-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

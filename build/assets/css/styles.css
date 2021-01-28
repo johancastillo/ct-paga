@@ -1277,3 +1277,23 @@ button.btn-secondary {
   z-index: 200;
   opacity: 0;
   transition: all 2s; }
+
+.content-slider {
+  height: 100%;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 20px; }
+
+.left-animation {
+  animation-duration: 10s;
+  animation-name: left-animation; }
+
+@keyframes left-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

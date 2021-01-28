@@ -1,0 +1,33 @@
+//- ----
+
+#carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+  ol.carousel-indicators
+    li.active(data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0')
+    li(data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1')
+    li(data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2')
+
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src='./assets/img/slider/bg_banner.jpg' alt='...')
+      .carousel-caption.d-none.d-md-block.content-slider
+        img(src="./assets/img/slider/vector.png", alt="" style={width: '400px'}).left-animation
+        p Nulla vitae elit libero, a pharetra augue mollis interdum.
+    
+    .carousel-item
+      img.d-block.w-100(src='./assets/img/slider/bg_banner2.jpg' alt='...')
+      .carousel-caption.d-none.d-md-block
+        h5 Second slide label
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    
+    .carousel-item
+      img.d-block.w-100(src='./assets/img/slider/bg_banner3.jpg' alt='...')
+      .carousel-caption.d-none.d-md-block
+        h5 Third slide label
+        p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+  
+  a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-bs-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.visually-hidden Previous
+  a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-bs-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.visually-hidden Next
