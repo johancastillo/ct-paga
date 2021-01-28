@@ -1281,19 +1281,19 @@ button.btn-secondary {
 .content-slider {
   height: 100%;
   width: 100%;
-  display: flex !important;
-  justify-content: space-around;
-  align-items: center;
   top: 0;
   left: 0;
   padding: 20px; }
 
 .left-animation {
-  animation-duration: 10s;
+  position: absolute;
+  animation-duration: 2s;
   animation-name: left-animation; }
 
 @keyframes left-animation {
   from {
+    left: -200px;
     opacity: 0; }
   to {
+    left: 50px;
     opacity: 1; } }

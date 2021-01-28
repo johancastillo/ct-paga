@@ -118,15 +118,18 @@ button.btn-secondary {
 @import "./content-slider";
 
 .left-animation{
-    animation-duration: 10s;
+    position: absolute;
+    animation-duration: 2s;
     animation-name: left-animation ;
 }
 
 @keyframes left-animation{
     from{
+        left: -200px;
         opacity: 0;
     }
     to{
+        left: 50px;
         opacity: 1;
     }
 }
