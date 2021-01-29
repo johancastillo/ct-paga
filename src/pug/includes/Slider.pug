@@ -7,11 +7,23 @@
     li(data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2')
 
   .carousel-inner
+    
     .carousel-item.active
       img.d-block.w-100(src='./assets/img/slider/bg_banner.jpg' alt='...')
+      
       .carousel-caption.d-none.d-md-block.content-slider
-        img(src="./assets/img/slider/vector.png", alt="" style={width: '400px'}).left-animation
-        p Nulla vitae elit libero, a pharetra augue mollis interdum.
+        div.content
+          .container
+            .row
+              .col-md-6
+                img(src="./assets/img/slider/vector.png", alt="" style={width: '400px'}).left-animation
+
+              .col-md-6
+                div.rigth-animation 
+                  h1.text-center Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  p.text-center Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  img(src="./assets/img/icon/app-store.png", width="180px", alt="").mt-4
+                  img(src="./assets/img/icon/google-play.png", width="180px", alt="").mt-4.ml-2
     
     .carousel-item
       img.d-block.w-100(src='./assets/img/slider/bg_banner2.jpg' alt='...')
