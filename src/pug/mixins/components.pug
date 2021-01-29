@@ -28,30 +28,31 @@ mixin reviewCard(name, text)
 //- ***** Review Card End *****
 
 
-
 //- ***** Benefit Card Start *****
 mixin benefitCard(icon, title, description, spaces)
-    div.col-12.col-md-6.col-lg-4.col-xl-3.mt-4
-        //- Image Box
-        div.image-box.text-center.icon-1.p-5.wow.fadeInLeft(data-wow-delay="0.4s")
+    //- div.col-12.col-md-6.col-lg-4.col-xl-3.mt-4
+    //- Image Box
+    div.image-box.text-center.icon-1.p-5.wow.fadeInLeft(data-wow-delay="0.4s").mt-4
+        .container-fluid
+            .row
+                .col-4
+                    //- Featured Image
+                    div.featured-img.mb-3
+                    span(class= icon).benefit-icon
+                .col-8
+                    //- Icon Text
+                    div.icon-text
+                        h3.mb-2= title
 
-            //- Featured Image
-            div.featured-img.mb-3
-                span(class= icon).benefit-icon
-
-            //- Icon Text
-            div.icon-text
-                h3.mb-2= title
-
-                block contentCard
-                    p= description
-                    
-                    //- Print spaces
-                    - let i = 0
-                    div
-                        while i < spaces
-                            br
-                            - i++
+                        block contentCard
+                            p= description
+                            
+                            //- Print spaces
+                            - let i = 0
+                            div
+                                while i < spaces
+                                    br
+                                    - i++
 //- ***** Benefit Card Start *****
 
 

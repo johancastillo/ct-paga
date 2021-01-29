@@ -14,7 +14,13 @@ section#features.section.features-area.style-two.overflow-hidden.py-5
                     p.mt-4= benefitsDescription
 
         div.row
-            //- Benefits List Start
-            each benefit in benefits
-                +benefitCard(benefit.icon, benefit.title, benefit.description, benefit.spaces)
-            //- Benefits List End
+            .col-md-6
+                //- Benefits List Start
+                each benefit in benefits.column1
+                    +benefitCard(benefit.icon, benefit.title, benefit.description, benefit.spaces)
+                //- Benefits List End
+            .col-md-6
+                //- Benefits List Start
+                each benefit in benefits.column2
+                    +benefitCard(benefit.icon, benefit.title, benefit.description, benefit.spaces)
+                //- Benefits List End
